@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # opencubic
-apt install --no-install-recommends opencubicplayer
+apt install -y --no-install-recommends opencubicplayer
 
 # conky
-apt install --no-install-recommends conky
+apt install -y --no-install-recommends conky
 cp ./config/conky/conky.conf /etc/conky/conky.conf
 # git clone https://github.com/brndnmtthws/conky.git
 
