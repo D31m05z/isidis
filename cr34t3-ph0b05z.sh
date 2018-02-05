@@ -3,8 +3,11 @@
 # opencubic
 
 # conky
-git clone https://github.com/brndnmtthws/conky.git
+# git clone https://github.com/brndnmtthws/conky.git
 
-# veil framwwork
-git clone https://github.com/Veil-Framework/Veil.git
+# install MITMf framework
+./mitmf-install.sh
+
+# install Veil framwwork
+./veil-install.sh
 
