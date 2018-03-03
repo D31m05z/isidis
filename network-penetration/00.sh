@@ -18,3 +18,8 @@ function error {
 }
 export error
 
+function status {
+    echo -e -e "\n$GREEN[*] $BLUE $1$RESETCOLOR\n" >&2
+}
+export status
+
