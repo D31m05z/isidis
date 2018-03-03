@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# utils
+apt install -y terminator git-gui
+
 # opencubic
 apt install -y --no-install-recommends opencubicplayer
 
