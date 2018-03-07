@@ -1,5 +1,11 @@
 #!/bin/bash
 
+source 00.sh
+
+if [ $(id -u) -ne 0 ]; then
+    error "This script must be run as root"
+fi
+
 # utils
 apt install -y terminator git-gui
 
@@ -15,5 +21,5 @@ cp ./config/conky/conky.conf /etc/conky/conky.conf
 ./mitmf-install.sh
 
 # install Veil framwwork
-./veil-install.sh
+#./veil-install.sh
 

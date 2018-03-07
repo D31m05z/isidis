@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source 00.sh
+source ../00.sh
 
 if [ $(id -u) -ne 0 ]; then
     error "This script must be run as root"
