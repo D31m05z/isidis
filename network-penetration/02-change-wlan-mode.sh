@@ -1,6 +1,8 @@
 #!/bin/bash
 
-source ../00.sh
+set -e
+
+source 00.sh
 
 if [ $(id -u) -ne 0 ]; then
     error "This script must be run as root"
@@ -38,7 +40,7 @@ case "$2" in
 		else
 			airmon-ng stop $1
 		fi
-        ;;
+  ;;
 	airmon-kill)
 		ifconfig $1 down
 		airmon-ng check kill
@@ -69,4 +71,3 @@ for device in $interfaces; do
 done
 
 notify "network $1 monitor mode changed to $3"
-

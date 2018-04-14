@@ -1,6 +1,8 @@
 #!/bin/bash
 
-source ../00.sh
+set -e
+
+source 00.sh
 
 if [ $(id -u) -ne 0 ]; then
     error "This script must be run as root"
@@ -35,4 +37,3 @@ out="c4ptur3.cap"
 status "$bssid $channel $interface"
 
 airodump-ng --channel $channel --bssid $bssid --write $out $interface
-
