@@ -6,6 +6,9 @@ if [ $(id -u) -ne 0 ]; then
     error "This script must be run as root"
 fi
 
+# update repository
+apt update
+
 # utils
 apt install -y terminator git-gui
 
