@@ -1,9 +1,15 @@
 #!/bin/bash
 
-set -e
+[ -d Veil ] && rm -rf Veil
 
 xhost +
-cd /opt/
-git clone https://github.com/Veil-Framework/Veil.git
-bash /opt/Veil/setup/setup.sh -c
+
+git clone https://github.com/D31m05z/Veil.git
+
+cd Veil
+
+./config/update-config.py
+
+./config/setup.sh --silent
+
 xhost -

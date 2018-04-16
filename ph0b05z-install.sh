@@ -24,5 +24,5 @@ cp ./config/conky/conky.conf /etc/conky/conky.conf
 ./mitmf-install.sh
 
 # install Veil framwwork
-#./veil-install.sh
+./veil-install.sh
 
