@@ -21,8 +21,8 @@ cp ./config/conky/conky.conf /etc/conky/conky.conf
 # git clone https://github.com/brndnmtthws/conky.git
 
 # install MITMf framework
-./mitmf-install.sh
+./ph0b05z/mitmf-install.sh
 
 # install Veil framwwork
-./veil-install.sh
+./ph0b05z/veil-install.sh
 

@@ -7,13 +7,13 @@ pip install virtualenvwrapper
 
 source /usr/local/bin/virtualenvwrapper.sh
 
-[ -d MITMf ] && rm -rf MITMf
+[ -d ./fr4m3w0rk/MITMf ] && rm -rf ./fr4m3w0rk/MITMf
 
-git clone https://github.com/byt3bl33d3r/MITMf
+git clone https://github.com/byt3bl33d3r/MITMf ./fr4m3w0rk/MITMf
 
-cd MITMf && git submodule init && git submodule update --recursive
+cd ./fr4m3w0rk/MITMf && git submodule init && git submodule update --recursive
 
-rmvirtualenv MITMf
-mkvirtualenv -p /usr/bin/python2.7 -r ./requirements.txt MITMf
+rmvirtualenv Ph0b05z
+mkvirtualenv -p /usr/bin/python2.7 -r ./requirements.txt Ph0b05z
 
 python mitmf.py --help
