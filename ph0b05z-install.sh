@@ -33,6 +33,25 @@ cp ./config/i3lock ~/.config/
 apt install awesome
 git clone --recursive https://github.com/D31m05z/awesome-copycats.git ~/.config/awesome
 
+# hashcat
+git clone https://github.com/hashcat/hashcat.git
+cd hashcat
+git submodule update --init
+make
+cd -
+
+# hashcat utils
+git clone https://github.com/hashcat/hashcat-utils.git
+cd hashcat-utils
+make
+cd -
+
+# airgeddon
+git clone https://github.com/v1s1t0r1sh3r3/airgeddon.git
+cd airgeddon
+
+cd -
+
 # install MITMf framework
 ./ph0b05z/mitmf-install.sh
 
