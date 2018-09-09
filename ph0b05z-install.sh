@@ -21,13 +21,14 @@ cp ./config/conky/conky.conf /etc/conky/conky.conf
 # git clone https://github.com/brndnmtthws/conky.git
 
 # i3lock
-# apt install -y libev-dev libxcb* libxkbcommon-dev libxkbcommon-x11-dev libpam0g-dev
-# git clone https://github.com/PandorasFox/i3lock-color.git
-# cd i3lock-color
-# git tag -f "git-$(git rev-parse --short HEAD)"
-# autoreconf -i && ./configure && make && make install
-# cd -
-# cp ./config/i3lock ~/.config/
+apt install -y libev-dev libxcb* libxkbcommon-dev libxkbcommon-x11-dev libpam0g-dev
+git clone https://github.com/PandorasFox/i3lock-color.git
+cd i3lock-color
+git tag -f "git-$(git rev-parse --short HEAD)"
+autoreconf -i && ./configure && make && make install
+cd -
+cp ./config/i3lock ~/.config/
+
 
 # install MITMf framework
 ./ph0b05z/mitmf-install.sh
