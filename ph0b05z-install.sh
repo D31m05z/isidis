@@ -29,6 +29,9 @@ autoreconf -i && ./configure && make && make install
 cd -
 cp ./config/i3lock ~/.config/
 
+# awesome
+apt install awesome
+git clone --recursive https://github.com/D31m05z/awesome-copycats.git ~/.config/awesome
 
 # install MITMf framework
 ./ph0b05z/mitmf-install.sh
