@@ -1,0 +1,5 @@
+sudo crunch 12 12 UTZMLTY2YJZJ -t UTZM@@@@@@@@ -o /usr/share/wordlists/custom_WNY.txt
+
+sudo crunch 10 10 1357911131 -o /usr/share/wordlists/numericwordlist_D10.txt
+
+
