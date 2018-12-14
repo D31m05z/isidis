@@ -1,3 +1,5 @@
+#!/bin/bash
+
 iptables --flush
 iptables --table nat --flush
 iptables --delete-chain
