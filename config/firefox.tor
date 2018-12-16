@@ -1,0 +1,29 @@
+# firefox
+# WebRTC
+media.peerconnection.enabled - false
+
+media.peerconnection.turn.disable = true
+media.peerconnection.use_document_iceservers = false
+media.peerconnection.video.enabled = false
+media.peerconnection.identity.timeout = 1
+
+# Tor
+privacy.firstparty.isolate = true
+privacy.resistFingerprinting = true
+
+# uBlock
+privacy.trackingprotection.enabled = false
+
+browser.cache.offline.enable = false
+browser.safebrowsing.malware.enabled = false
+browser.safebrowsing.phishing.enabled = false
+browser.send_pings = false
+browser.sessionstore.max_tabs_undo = 0
+browser.urlbar.speculativeConnect.enabled = false
+dom.battery.enabled = false
+dom.event.clipboardevents.enabled = false
+geo.enabled = false
+media.navigator.enabled = false
+network.cookie.cookieBehavior = 1
+network.cookie.lifetimePolicy = 2
+webgl.disabled = true
